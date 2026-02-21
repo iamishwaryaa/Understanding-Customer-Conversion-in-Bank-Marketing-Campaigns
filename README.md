@@ -5,15 +5,15 @@ This project analyzes customer subscription behavior in banking marketing campai
 
 ---
 
-## Tech Stack
-- **Programming Language:** Python  
-- **Data Analysis & Manipulation:** pandas, NumPy  
-- **Data Visualization:** Matplotlib, Seaborn  
-- **Preprocessing & Feature Engineering:** One-hot encoding, scaling, handling missing values, feature selection  
-- **Machine Learning Models:** Logistic Regression, Random Forest Classifier  
-- **Hyperparameter Tuning:** GridSearchCV  
-- **Model Evaluation:** Accuracy, Precision, Recall, F1-score, Confusion Matrix, ROC-AUC  
-- **Multicollinearity Check:** Variance Inflation Factor (VIF)  
+## Tech Stack & Packages
+- **Programming Language:** Python 3.x  
+- **Data Analysis & Manipulation:** `pandas`, `numpy`  
+- **Data Visualization:** `matplotlib`, `seaborn`  
+- **Preprocessing & Feature Engineering:** `scikit-learn` (`StandardScaler`, `OneHotEncoder`, `train_test_split`)  
+- **Machine Learning Models:** `scikit-learn` (`LogisticRegression`, `RandomForestClassifier`)  
+- **Hyperparameter Tuning:** `scikit-learn` (`GridSearchCV`)  
+- **Model Evaluation:** `scikit-learn` (`accuracy_score`, `classification_report`, `confusion_matrix`)  
+- **Multicollinearity Check:** `statsmodels` (`variance_inflation_factor`)  
 
 ---
 
