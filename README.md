@@ -29,6 +29,7 @@ This project analyzes customer subscription behavior in banking marketing campai
 
 **Key Insights:**
 - Random Forest achieved higher overall accuracy and better precision for predicting actual subscribers.  
+- GridSearchCV was used to identify optimal hyperparameters for both Logistic Regression and Random Forest models.  
 - Class imbalance remains a challenge; models have low recall for subscribers.  
 - Campaign-related variables and financial indicators are strong predictors of subscription.  
 
