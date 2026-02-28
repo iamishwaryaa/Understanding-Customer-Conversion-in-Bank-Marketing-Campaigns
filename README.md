@@ -17,7 +17,7 @@ This project analyzes customer subscription behavior in banking marketing campai
   
 ---
 
-## What Was Done
+## Methodology
 1. **Data Preparation & Cleaning**
    - Removed `duration` to prevent data leakage; converted target variable `y` to binary.  
    - One-hot encoded categorical features and standardized numerical features.  
