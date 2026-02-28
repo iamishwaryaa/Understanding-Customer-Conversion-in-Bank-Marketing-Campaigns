@@ -13,7 +13,27 @@ This project analyzes customer subscription behavior in banking marketing campai
 - **Machine Learning Models:** `scikit-learn` (`LogisticRegression`, `RandomForestClassifier`)  
 - **Hyperparameter Tuning:** `scikit-learn` (`GridSearchCV`)  
 - **Model Evaluation:** `scikit-learn` (`accuracy_score`, `classification_report`, `confusion_matrix`)  
-- **Multicollinearity Check:** `statsmodels` (`variance_inflation_factor`)  
+- **Multicollinearity Check:** `statsmodels` (`variance_inflation_factor`)
+  
+---
+
+## What Was Done
+1. **Data Preparation & Cleaning**
+   - Removed `duration` to prevent data leakage; converted target variable `y` to binary.  
+   - One-hot encoded categorical features and standardized numerical features.  
+   - Created `was_contacted_before` from `pdays` and scaled numeric columns.  
+
+2. **Exploratory Data Analysis (EDA)**
+   - Visualized class imbalance, feature correlations, and target relationships.  
+   - Identified key variables affecting subscription.  
+
+3. **Multicollinearity Handling**
+   - Calculated VIF scores; removed highly correlated macroeconomic features for model stability.  
+
+4. **Modeling**
+   - Built **Logistic Regression** and **Random Forest** classifiers.  
+   - Used GridSearchCV for hyperparameter tuning and `class_weight='balanced'` to handle class imbalance.  
+   - Evaluated models using Accuracy, Precision, Recall, F1-score, and Confusion Matrices.  
 
 ---
 
@@ -27,12 +47,6 @@ This project analyzes customer subscription behavior in banking marketing campai
 | False Positives | 803 | 203 |
 | False Negatives | 640 | 688 |
 
-**Key Insights:**
-- Random Forest achieved higher overall accuracy and better precision for predicting actual subscribers.  
-- GridSearchCV was used to identify optimal hyperparameters for both Logistic Regression and Random Forest models.  
-- Class imbalance remains a challenge; models have low recall for subscribers.  
-- Campaign-related variables and financial indicators are strong predictors of subscription.  
-
 ---
 
 ## Impact
@@ -40,3 +54,11 @@ This project analyzes customer subscription behavior in banking marketing campai
 - Reduces wasted resources and operational costs.  
 - Provides actionable insights on customer behavior for future campaigns.  
 - Methodology can be applied to other domains like insurance, retail, or subscription services.
+ 
+---
+
+**Insights:**  
+- Random Forest outperforms Logistic Regression in overall accuracy and precision for the minority class (subscribers).  
+- Both models struggle with recall due to dataset imbalance.  
+- Important predictors include age, previous campaign history, and macroeconomic indicators.  
+- Class imbalance remains a key challenge; further improvements may require advanced resampling techniques or ensemble methods.
