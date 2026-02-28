@@ -57,7 +57,7 @@ This project analyzes customer subscription behavior in banking marketing campai
  
 ---
 
-**Insights:**  
+## Insights:  
 - Random Forest outperforms Logistic Regression in overall accuracy and precision for the minority class (subscribers).  
 - Both models struggle with recall due to dataset imbalance.  
 - Important predictors include age, previous campaign history, and macroeconomic indicators.  
