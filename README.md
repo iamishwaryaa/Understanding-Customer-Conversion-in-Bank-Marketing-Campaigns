@@ -8,7 +8,7 @@ This project analyzes customer subscription behavior in banking marketing campai
 ## Tech Stack & Packages
 - **Programming Language:** Python 3.x  
 - **Data Analysis & Manipulation:** `pandas`, `numpy`  
-- **Data Visualization:** `matplotlib`, `seaborn` , `tabluea`
+- **Data Visualization:** `matplotlib`, `seaborn` , `tableau`
 - **Preprocessing & Feature Engineering:** `scikit-learn` (`StandardScaler`, `OneHotEncoder`, `train_test_split`)  
 - **Machine Learning Models:** `scikit-learn` (`LogisticRegression`, `RandomForestClassifier`)  
 - **Hyperparameter Tuning:** `scikit-learn` (`GridSearchCV`)  
